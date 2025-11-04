@@ -1,0 +1,48 @@
+# Папки сборки и временные директории
+build/
+temp/
+env/
+.env
+
+# Файлы сборки и объектные файлы
+*.o
+*.obj
+*.a
+*.lib
+*.dll
+*.so
+*.dylib
+*.exe
+*.out
+*.bin
+
+# Отладочная информация
+*.pdb
+*.ilk
+*.exp
+
+# Проекты и решения Visual Studio
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.vcxproj.filters
+*.vcxproj.user
+
+# Кэш и метаданные IntelliSense в VS Code
+.vscode/c_cpp_properties.json
+.vscode/launch.json
+.vscode/tasks.json
+.vscode/settings.json
+
+
+# Временные и резервные файлы редакторов
+*~
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Логи и отчёты
+*.log
+*.tmp
