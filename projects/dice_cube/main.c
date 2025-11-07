@@ -26,6 +26,13 @@ void clear_screen() {
 #endif
 }
 
+void draw(int number) {
+    printf("+---------+\n");
+
+    printf("+---------+\n");
+    return 0;
+}
+
 int main(void) {
     printf("Press: \n    Enter - start game\n    Q/q or Esc - Exit\n");
     while (1) {
@@ -34,6 +41,7 @@ int main(void) {
         if (ch == '\n' || ch == '\r') { // Enter (Unix: \n, Windows: \r)
             clear_screen();
             printf("\nStart game!\n");
+
             break;
         } else if (ch == 'q' || ch == 'Q' || ch == 27) { // 27 = Esc
             printf("\nExit.\n");
@@ -48,5 +56,6 @@ int main(void) {
     // srand(time(NULL));
     int random_num = 1 + rand() % (6 - 1 + 1); // [min, max]
     printf("Dice: %d\n", random_num);
+    draw(random_num);
     return 0;
 }
